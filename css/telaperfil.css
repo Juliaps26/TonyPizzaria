@@ -1,0 +1,225 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 25vh 1fr;
+  height: 100vh;
+}
+
+header{
+  display: flex;
+  /* Imagem Fundo da pizza */
+  padding: 12px;
+  background-image: url(/img/fundocriar.png);
+}
+
+.voltar{
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Botão para voltar */
+.voltar button{
+  display: flex;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+}
+
+/* Texto - meu perfil */
+.voltar h2{
+  display: flex;
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto";
+font-size: 16px;
+font-weight: 700;
+}
+
+
+main{
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-content: center;
+  padding-block: 12px;
+  gap: 12px;
+  position: relative;
+
+}
+
+main::before{
+  display: block;
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  border-radius: 24px 24px 0 0;
+  width: 100%;
+  height: 10px;
+  top: -10px;
+}
+
+.perfil{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: -10vh;
+}
+
+.foto{
+  background-color: brown;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  position: relative;
+  background-image: url(/img/foto\ cara.png);
+}
+
+.editar{
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Poder editar o item como quiser */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.editar img{
+  width: 70%;
+  height: 70%;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Editar fonte nome */
+.info h2{
+  font-family: "Roboto";
+font-size: 20px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+/* Editar fonte cidade */
+.info p{
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(174, 166, 166, 1);
+
+}
+
+address{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 85vw;
+}
+
+.info-pessoal{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-info{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(242, 119, 6, 0.35);
+  border-radius: 12px;
+  gap: 12px;
+}
+
+/* Textos titulo: telefone, email e localização */
+.container-info p{
+  font-family: 'Roboto', sans-serif;
+font-size: 12px;
+font-weight: 400;
+color: rgba(153, 153, 153, 1);
+
+}
+
+/* Textos  */
+.container-info h2{
+  font-family: "Roboto";
+font-size: 14px;
+font-weight: 400;
+}
+
+.icon{
+  background-color: rgba(244, 226, 209, 1);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.icon img{
+  width: 80%;
+  height: 80%;
+}
+
+/* Botão para sair do sistema  */
+address button{
+  background-color: rgba(249, 48, 48, 1);
+  border: none;
+  border-radius: 8px;
+  display: grid;
+
+}
+
+address button a{
+text-decoration: none;
+font-family: "Roboto";
+font-size: 14px;
+font-weight: 400;
+color: white;
+
+}
+
+address button a img{
+  display: grid;
+
+  
+
+}
+ 
+address button a h2{
+  text-decoration: none;
+font-family: "Roboto";
+font-size: 14px;
+font-weight: 400;
+color: white;
+
+
+}

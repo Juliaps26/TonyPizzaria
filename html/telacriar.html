@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="../css/telacriar.css">
+   <title>Criar conta</title>
+</head>
+
+<body>
+
+   <header>
+      <!--Botão clique para voltar pro login-->
+      <button>
+         <a href="../html/telalogin.html"> <img src="../img/voltar.png" alt="Botão voltar"></a>
+         <h2>Criar conta</h2>
+      </button>
+   </header>
+   <main>
+
+      <!-- <div class="branco">
+                <img src="../img/retangulo.png" alt="">
+             </div> -->
+
+      <div class="perfil">
+         <img src="../img/fotoperfil.png" alt="">
+         
+
+         <!-- Para adicionar e trocar a foto de perfil -->
+
+         <!-- Label e input mesma coisa, para clicar-->
+         <label for="fotoperfil">
+            <img src="../img/adicionarfoto.png" alt="">
+         </label>
+         <!-- Tipo: file, para adicionar arquivo no geral -->
+         <input type="file" id="fotoperfil">
+      </div>
+
+
+      <!--Formulario para criar a conta -->
+      <form action="get">
+
+         <fieldset>
+            <div>
+               <label for="name"> Nome do Usuário </label>
+               <input type="text" name="name" id="name" required autocomplete="off">
+            </div>
+            <div>
+               <label for="email"> Endereço de e-mail </label>
+               <input type="email" name="email" id="email" required autocomplete="off">
+            </div>
+            <div>
+               <label for="password"> Senha </label>
+               <input type="password" name="password" id="password" required minlength="4" autocomplete="off">
+            </div>
+            <div>
+               <label for="password"> Confirmação de Senha </label>
+               <input type="password" name="password-confirmation" id="password-confirmation" required
+                  autocomplete="off">
+            </div>
+            <div>
+               <label for="telephone"> Telefone </label>
+               <input type="text" name="telephone" id="telephone" data-mask="(00) 0000-0000">
+            </div>
+         </fieldset>
+ <!--Botão para criar a conta e redirecionar para o perfil-->
+      <button>
+         <a href="../html/telahome.html">Criar conta</a>
+      </button>
+
+      </form>
+
+
+
+
+   </main>
+
+</body>
+
+</html>

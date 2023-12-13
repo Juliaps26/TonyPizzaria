@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    background-image: url(./img/fundo.png);
+  }
+
+main{
+  margin-left: 8px;
+}
+.img{
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+}
+
+/**/
+
+.textomaior{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 330px;
+}
+ 
+.descricao{
+  color: white;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+width: 280px;
+height: 50px;
+margin-top: 100px;
+border-radius: 10px;
+border: solid 2px white;
+
+}
+
+.botao a{
+text-decoration: none;
+color: #F27706;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}

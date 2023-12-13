@@ -1,0 +1,174 @@
+body{
+margin: 0;
+padding: 0;
+height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+header{
+  background-image: url(../img/fundocriar.png);
+  height: 30vh;
+  display: flex;
+  padding: 20px 15px;
+  /* Não se repetir, só uma imagem */
+  background-repeat: no-repeat;
+  /* Para cobrir tudo na imagem */
+  background-size: cover;
+}
+
+/*Arrumar botão*/
+header button{
+  display: flex;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    gap: 22px;
+}
+
+/*Criar conta texto*/
+h2{
+  color: white;
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+/*Foto de perfil*/
+.perfil{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  transform: translateY(-18vh);
+  background-color: rgba(196, 196, 196, 1);
+  border-radius: 4rem;
+  justify-content: center;
+  
+}
+
+/* Imagem do perfil */
+.perfil img{
+  width: 58%;
+  height: 56%;
+}
+.perfil input{
+  display: none;
+
+}
+.perfil label{
+  position: absolute;
+  width: 38px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  right: -15px;
+  bottom: 0px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 12px 12px 0px 0px;
+  margin-top: -6vh;
+  padding-bottom: 15px;
+}
+
+
+main form{
+  width: 85%;
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  /* Deixar afastado */
+  justify-content: space-between;
+  height: 100%;
+}
+main form fieldset{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.2rem;
+  width: 100%;
+   z-index: 99;
+
+}
+
+main form fieldset div{
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.30rem;
+  position: relative;
+}
+
+/* Textos do main formulário */
+main form fieldset div label{
+  color: gray;
+  font-size: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+}
+
+main form fieldset div input{
+  border: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+main form fieldset div::after{
+  content: '';
+  display: block;
+  width: 100%;
+  min-height: 1px;
+  position: absolute;
+  background-color: gray;
+  bottom: -0.75rem;
+}
+
+/*Botão */
+form button{
+  background-color: rgba(25, 149, 112, 1);
+  border: none;
+  border-radius: 8px;
+background: #199570;
+height: 54px;
+width: 100%;
+
+}
+
+form button a{
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+
+
+}
+
+
+

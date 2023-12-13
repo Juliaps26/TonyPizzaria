@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 25vh 1fr;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    /* Imagem Fundo da pizza */
+    padding: 12px;
+    background-image: url(../img/pizza4.png);
+  }
+
+
+  
+
+
+  

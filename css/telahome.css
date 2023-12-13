@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    height: 100%;
+    background: linear-gradient(to bottom, #f5933d, rgb(247, 246, 246));
+}
+
+header{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Pai dos textos */
+.home{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+/* Bom dia, Celso */
+.home span{
+    font-weight: 80px;
+    font-size: 15px;
+    font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+}
+
+/* Home texto */
+.home h2{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+font-size: 22px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0em;
+}
+
+/* Perfil */
+.perfil{
+    background: url(../img/foto\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* Barra da pesquisa */
+.pesquisa{
+    height: 35px;
+    display: flex;
+}
+
+/* Texto da barra de pesquisa */
+.pesquisa .text{
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Barra de pesquisa */
+.pesquisa .search{
+    width: 50px;
+    /* Imagem da lupa */
+    background: url(../img/lupa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-left: none;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Texto categoria */
+main .categoria{
+    padding: 0px 21px;
+    width: 100%;
+    height: 30px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: 700;
+    font-size: 16px;
+   
+}
+/* Icones das categ */
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+
+.icons button{
+    display: flex;
+    padding: 10px 10px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+.titulo{
+    padding: 10px 21px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.pizzas{
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.precoPizza{
+    color: #FFFFFF;
+    background-color: #F01212;
+    width: fit-content;
+    border-radius: 16px;
+    padding: 4px;
+}
+.nomePizza{
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 80%;
+    font-size: 80%;
+    padding: 4px;
+    border-bottom-left-radius: 16px;
+}
+
+main button{
+    border: none;
+    color: #FFFFFF;
+    background-color: transparent;
+    width: 90%;
+    font-size: 40%;
+    padding: 4px;
+    border-bottom-left-radius: 16px;
+}
+
+main button a{
+    border: none;
+    color: #FFFFFF;
+    background-color: transparent;
+    width: 85%;
+    font-size: 10px;
+    padding: 4px;
+    border-bottom-left-radius: 16px;
+    text-decoration: none;
+
+}
+
+
+.pizza{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 16px;
+}
+.pizza:nth-child(1){
+    background: url(../img/pizza1.png);
+}
+
+.pizza:nth-child(2){
+    background: url(../img/pizza2.png);
+}
+
+/* Falta pizza 3 do canto  */
+
+.pizzas2{
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.pizza01{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 16px;
+    width: 160px;
+    height: 100px;
+    background: url(../img/pizza4.png);
+    background-color: transparent;
+}
+.pizza02{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 16px;
+    width: 150px;
+    height: 100px;
+    background: url(../img/pizza5.png);
+}
+
+/* Tirar fundopreto do nome das pizzas 4 e 5 */
+
+/* Container das bebidas */
+.container{
+    height: 90px;
+    width: 340px;
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 20px;
+    border: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Descrição das bebidas */
+.container p{
+    color:  rgba(0, 0, 0, 0.5);
+    font-family: "Roboto";
+font-size: 14px;
+font-weight: 400;
+}
+
+/* Preco das bebidas */
+.preco{
+    background-color: #F01212;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 2px;
+    border-radius: 15px;
+    font-family: Roboto;
+font-size: 12px;
+font-weight: 700;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100vw;
+    z-index: 2;
+    background-color: #f5933d;
+    color: #fff;
+    font-family: "Roboto";
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+footer>div{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+footer button{
+    border: none;
+    background-color: none;
+    background-color: transparent;
+}
+
+
+footer button a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}

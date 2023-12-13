@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../img/fundo.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  height: 100vh;
+}
+
+/*Imagem da logo*/
+.logo{
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+}
+
+
+/*Acessse sua conta textos*/
+h2{
+margin-left: 19px;
+font-family: 'Roboto', sans-serif;
+color: #FFF;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 230px;
+}
+
+p{
+margin-left: 19px ;
+color: #FFF;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/*Mexendo no pai main*/
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 24px;
+}
+
+
+/*Formulario para inserir dados do email e senha*/
+/*Mexer no pai do formulario que é o main */
+main form{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/*Mexer no formulario e sua div pai */
+
+form div{
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 12px;
+  height: 32px;
+  align-items: center;
+  position: relative;
+}
+
+
+/* Linha */
+/*Quando usar esse codigo para adicionar um elemento sem mexer no html,
+ usamos o before (depois), e no pai position relative, e nele
+ display: block;
+ content: '';
+ position: absolute;
+ */
+
+form div::before{
+  display: block;
+  content: '';
+  background-color: #FFF;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -5px;
+}
+
+/*Mexer nos icones de email e senha */
+form div img{
+  width: auto;
+  height: 16px;
+  place-self: center center;
+}
+
+/*Mexer na imagem da div filho 2 */
+form div:nth-child(2) img{
+  height: 20px;
+}
+
+/*Mexer no input*/
+form div input{
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+/*Input vai ser o foco*/
+input:focus{
+  box-shadow: 0 0 0 0;
+  border: none;
+  outline: 0;
+  background: transparent;
+}
+/**/
+form div input::placeholder, form div input{
+  color: #FFF;
+}
+
+/*Botão para entrar na conta*/
+/*Mexendo no pai para alinhar os itens e espaçar eles */
+.entrar{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/*Mexendo no botão*/
+.entrar button{
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  color: rgba(242, 119, 6, 1);
+}
+
+/*Mexer no texto do botão*/
+.entrar button a{
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/*Entrando na classe entrar e mexendo no span que contém um texto*/
+.entrar span{
+  width: fit-content;
+  font-weight: 700;
+  color: white;
+}
+
+/*Mexendo no pai */
+footer{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 1.5rem;
+}
+
+/*Mexendo no texto do footer*/
+footer p{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/*Mexendo no botão que tem no footer*/
+footer button{
+  background: transparent;
+  border: none;
+}
+
+/*Mexendo no texto do botão que está dentro do footer*/
+footer button a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
