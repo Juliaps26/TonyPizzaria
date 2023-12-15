@@ -107,6 +107,7 @@ main .categoria{
     display: flex;
     justify-content: center;
     gap: 13px;
+    margin-left: 28px;
 }
 
 .icons button{
@@ -228,11 +229,9 @@ main button a{
     justify-content: center;
     align-items: end;
     padding: 20px;
-    border: 20px;
     border-radius: 10px;
     margin: 10px;
 }
-
 
 .info{
     display: flex;

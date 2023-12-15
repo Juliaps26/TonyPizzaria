@@ -1,22 +1,116 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-rows: 25vh 1fr;
-    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+/* Fundo imagem da pizza */
+.fundo{
+    position: absolute;
+    z-index: -2;
 }
 
 header{
     display: flex;
-    /* Imagem Fundo da pizza */
-    padding: 12px;
-    background-image: url(../img/pizza4.png);
-  }
+    padding: 20px;
+}
+
+/* Botão de sair e voltar para tela home */
+.sair{
+    position: absolute;
+    margin: 3vh;
+}
+
+/* Todos os elementos  */
+.caixa{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    height: 74%;    
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
-  
+.pizza{
+    display: flex;
+    align-items: center;
+    color:  rgba(0, 0, 0, 0.6);
+
+}
+
+/* Preço */
+.preco h1{
+    color: rgb(35, 203, 152);
+    font-size: 27px;
+}
+
+.preco{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    color: rgb(153, 153, 153);
+}
 
 
-  
+/* Comentarios texto */
+.comentarios{
+    gap: 5px;
+    font-size: 17px;
+    display: flex;
+    font-weight: bold;
+    color:  rgba(0, 0, 0, 0.6);
+    font-family: "Roboto";
+font-size: 15px;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+
+}
+
+/* Container dos comentários */
+.container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estrelas de avaliação */
+.star{
+    display: flex;
+    margin-left: auto;
+    height: 17px;
+}
+
+/* Bloco comentário com todos os elementos, div pai */
+.comentario{
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    padding: 4px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(174, 166, 166);
+}
+
+.mensagem h2{
+    font-size: 13px;
+}
+
+.mensagem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mensagem p{
+    color: rgb(153, 153, 153);
+}
